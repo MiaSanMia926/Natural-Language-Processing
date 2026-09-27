@@ -1,0 +1,11 @@
+{
+  "protocol_id": "76b470f8a4e2c7f2b20abac8962154510361c81d276b915880996fb580023bcb",
+  "runs": {
+    "task1_binary_bow": "20260926T132729_d977ce03",
+    "task1_word_frequency": "20260926T132736_8c8888db",
+    "task2_glove": "20260926T132920_d3ad0208",
+    "task2_word2vec_ag": "20260926T133109_88918e02",
+    "task2_word2vec_nyt": "20260926T134010_d3af4780",
+    "task3_bert": "20260926T151852_3e5eb991"
+  }
+}

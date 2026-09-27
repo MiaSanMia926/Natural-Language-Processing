@@ -1,0 +1,16 @@
+# Python 3.11–3.13。固定实验依赖；不再需要 NLTK 或 punkt 数据。
+numpy==2.3.5
+pandas==2.3.3
+scipy==1.16.3
+scikit-learn==1.7.2
+joblib==1.5.2
+matplotlib==3.10.6
+packaging>=24,<26
+
+# Word2Vec
+gensim==4.4.0
+
+# BERT Trainer；GPU 环境请使用与硬件匹配的 PyTorch 2.8.0 构建。
+torch==2.8.0
+transformers==4.56.2
+accelerate==1.10.1

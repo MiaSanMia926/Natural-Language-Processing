@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.validation/
+colab_task3_upload/
+colab_task3.zip
+models/
+data/glove/
+results/archive/
+*.tmp
+data/
+results/details/
