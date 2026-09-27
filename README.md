@@ -1,21 +1,7 @@
-# 作业一 文本分类实现与运行说明
+# 文本分类实现与运行说明
 
-本项目完成作业指定的六组实验：Binary BoW、Word Frequency、GloVe、AG News Word2Vec、NYT Word2Vec 和 BERT。六组均已实际运行，使用相同 NYT 划分。正式报告为 [PDF](report/report.pdf)，另有 [可编辑 Word](report/report.docx) 和 [Markdown](report/report.md)。
+本项目完成作业指定的六组实验：Binary BoW、Word Frequency、GloVe、AG News Word2Vec、NYT Word2Vec 和 BERT。六组均已实际运行，使用相同 NYT 划分。正式报告为 [PDF](report/report.pdf)，另有 [Word](report/report.docx)。
 
-## 作业要求与提交
-
-依据《作业一要求.docx》，应提交 **PDF 实验报告、完整代码、代码运行说明**，提交方式为包含全部材料的 **GitHub 链接**。截止时间为 **10 月 12 日上午 11:55**，原文未注明年份，以课程通知为准。
-
-Task 1 明确要求两种方法并列出两个定义，另有一句“三种方法”的不一致表述；本项目完成 Binary BoW 和 Word Frequency，不包含 TF-IDF。Task 2 完成三组 100 维词向量平均表示加 Logistic Regression；Task 3 使用指定 BERT，max_length=64，训练 3 epochs。
-
-提交前请完成：
-
-1. 填写 Word 报告首页姓名、学号和班级，重新导出 PDF，确保内容一致。
-2. 将 `src/`、`tests/`、`requirements.txt`、`README.md`、`report/` 和当前 `results/` 纳入仓库；Markdown 图表依赖 `results/` 中图片，保留相对路径。
-3. 按下文说明提供或准备课程数据和 GloVe。原文未明确要求提交模型权重，`models/` 和 `data/glove/` 默认被 Git 忽略，本地保留用于复查及预测；有额外课程要求时另行提供。
-4. 检查 GitHub 上报告、代码与说明可访问，再到课程平台提交链接。本项目不会自动上传或代交。
-
-作业要求独立完成，请本人理解并核对代码与分析，遵守课程对辅助工具的规定。
 
 ## 当前结果
 
