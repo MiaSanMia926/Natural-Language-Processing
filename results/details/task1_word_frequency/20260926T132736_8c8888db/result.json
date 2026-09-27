@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "experiment": "task1_word_frequency",
+  "run_id": "20260926T132736_8c8888db",
+  "created_at_utc": "2026-09-26T13:27:36.245436+00:00",
+  "accuracy": 0.9825479930191972,
+  "macro_f1": 0.9571796677166327,
+  "val_accuracy": 0.9816433566433567,
+  "val_macro_f1": 0.9570351435701087,
+  "split_id": "56048ab9d9a2225f8be9445e654bfee9b2027525b999df58c6ba578df60d27bc",
+  "protocol_id": "76b470f8a4e2c7f2b20abac8962154510361c81d276b915880996fb580023bcb",
+  "dataset_sha256": "de12ebe7f41316b798896bf975da840e2998f82393328d375fe5456a14e9eb2d",
+  "split_manifest": "results/splits/56048ab9d9a2225f8be9445e654bfee9b2027525b999df58c6ba578df60d27bc.json",
+  "label_order": [
+    "business",
+    "politics",
+    "sports"
+  ],
+  "class_counts": {
+    "train": {
+      "business": 1148,
+      "politics": 1143,
+      "sports": 6866
+    },
+    "val": {
+      "business": 140,
+      "politics": 148,
+      "sports": 856
+    },
+    "test": {
+      "business": 129,
+      "politics": 142,
+      "sports": 875
+    }
+  },
+  "config": {
+    "representation": "raw_counts",
+    "tokenizer": {
+      "name": "regex_v1",
+      "lowercase": true,
+      "pattern": "[a-zA-Z]+(?:'[a-zA-Z]+)?|\\d+"
+    },
+    "vocabulary_fit_on": "train",
+    "classifier_fit_on": "train",
+    "hyperparameter_selection": "fixed_in_advance",
+    "vocab_size": 65902,
+    "classifier": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": null,
+      "max_iter": 2000,
+      "multi_class": "deprecated",
+      "n_jobs": null,
+      "penalty": "l2",
+      "random_state": 42,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    }
+  },
+  "environment": {
+    "python": "3.13.9",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.3.3",
+      "scipy": "1.16.3",
+      "scikit-learn": "1.7.2",
+      "joblib": "1.5.2",
+      "matplotlib": "3.10.6",
+      "gensim": "4.4.0",
+      "torch": "2.8.0",
+      "transformers": "4.56.2",
+      "accelerate": "1.10.1",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.8.0",
+      "huggingface-hub": "0.36.2",
+      "smart_open": "8.0.1",
+      "packaging": "25.0"
+    }
+  },
+  "source_sha256": {
+    "__init__.py": "b30439951017aa0f7539b4b45b0c7448076848e9c77fe309b04c812d8853ca77",
+    "aggregate_results.py": "765cf529cdff396e5031d5e6c3a14c1f5538bf8cff004ef903018d1d7a2e2719",
+    "check_environment.py": "957c1a0157e5ac95f835b0e11a172c010f24ae8212846f18695a51aed4699e0a",
+    "embeddings.py": "e156da633bd20a86e9f6ffc8531e803d0accbce654303220f2fc1b48bfadeec6",
+    "experiment.py": "ee3dc8d2193e62859db23a87518e076d901a2d629ca532b803a006a218659dcb",
+    "plot_results.py": "653c40a6a9b9589f14cf596880a1df7a9a7a1872c0f836c923b1034875112fb7",
+    "predict.py": "f77aa1b79343e7be3078ca11804cc13845adc2bed2359ce8c45bc49eba9904e6",
+    "task1_bow.py": "8251dfbb2a81f6f670c7e6c1abea7d58076966e9903074d5f79d8dfcfd7f4feb",
+    "task2_glove.py": "6126275aa1c8ea39bd81c01abe7f5f96d7b1c96debe5d61c07c6fa4cb6d9d79c",
+    "task2_word2vec.py": "c3e3946a0b94605537130bd4aa94637f876d694976b419e76bb9bcac86c3aabe",
+    "task3_bert.py": "45868ffeacb5948149ea6ff47a057cdfb06c877ca6384ad397b764ae69b1212d",
+    "utils.py": "e77ccb287242eea4e82f4597139eb8dc103631365f36ac59a563ab9a18199d58"
+  },
+  "details_dir": "results/details/task1_word_frequency/20260926T132736_8c8888db",
+  "model_dir": "models/task1_word_frequency/20260926T132736_8c8888db",
+  "model_files": [
+    "models/task1_word_frequency/20260926T132736_8c8888db/model.joblib"
+  ],
+  "diagnostics": {
+    "convergence": {
+      "parameters": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 2000,
+        "multi_class": "deprecated",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": 42,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "n_iter": [
+        122
+      ],
+      "converged": true,
+      "warnings": []
+    },
+    "timings": {
+      "features_seconds": 4.682945900014602,
+      "training_seconds": 9.501784899970517
+    }
+  },
+  "total_seconds": 16.362
+}
