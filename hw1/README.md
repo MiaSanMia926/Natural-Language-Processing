@@ -1,7 +1,22 @@
 # 文本分类实现与运行说明
 
-本项目完成作业指定的六组实验：Binary BoW、Word Frequency、GloVe、AG News Word2Vec、NYT Word2Vec 和 BERT。六组均已实际运行，使用相同 NYT 划分。正式报告为 [PDF](report/report.pdf)，另有 [Word](report/report.docx)。
+本项目完成作业指定的六组实验：Binary BoW、Word Frequency、GloVe、AG News Word2Vec、NYT Word2Vec 和 BERT。六组均已实际运行，使用相同 NYT 划分。实验报告提供 [PDF 正式版](report/report.pdf) 和 [LaTeX 源文件](report/report.tex)。
 
+
+## 实验报告
+
+- [PDF 正式版](report/report.pdf)：当前共 13 页，包含封面、摘要、目录、实验方法与结果、错误分析、总结讨论和参考资料；已删除附录。
+- [LaTeX 源文件](report/report.tex)：用于修改正文、表格、公式和排版，目录及图表编号由编译器自动生成。
+
+报告中的四幅图使用 `results/` 下对应的矢量 PDF。编译时保留 `hw1/report/` 与 `hw1/results/` 的相对目录关系；在 `report/` 目录运行 XeLaTeX 两次，以更新目录和编号：
+
+```powershell
+cd report
+xelatex -interaction=nonstopmode -halt-on-error report.tex
+xelatex -interaction=nonstopmode -halt-on-error report.tex
+```
+
+也可在该目录运行 `tectonic -X compile report.tex`，由 Tectonic 自动处理多轮编译。上传到 Overleaf 时，将 `report/` 和 `results/` 中所需的四幅 PDF 图表按原目录结构上传，以 `report/report.tex` 为主文档并选择 XeLaTeX。
 
 ## 当前结果
 
@@ -55,9 +70,8 @@ hw1/
 │   ├── confusion_matrices.*      # 六组混淆矩阵
 │   └── bert_training_curve.*     # BERT loss 与验证曲线
 └── report/
-    ├── report.pdf               # 正式提交版
-    ├── report.docx              # 可编辑版
-    └── report.md                # 文本版
+    ├── report.pdf               # LaTeX 编译的正式提交版
+    └── report.tex               # 可编辑 LaTeX 源文件
 ```
 
 图表各提供 300 dpi PNG、矢量 PDF、SVG。`comparison_chart_metadata.json` 记录运行 ID 与协议。结果 JSON 中的模型、明细和划分路径相对项目根目录，迁移时保持结构。
@@ -115,7 +129,7 @@ Task 1 一次生成两组结果。BERT 推荐在 Colab 执行，也可本地运�
 & $py -X utf8 -m src.plot_results
 ```
 
-应显示 `6/6`、各项 `complete`。协议不一致会报错，不要篡改协议 ID 强行合并。更新实验后需重新汇总、绘图并同步报告；Word/PDF 不会自动刷新。
+应显示 `6/6`、各项 `complete`。协议不一致会报错，不要篡改协议 ID 强行合并。更新实验后需重新汇总、绘图并同步 `report/report.tex` 中的结果，再按“实验报告”部分的说明重新编译 PDF；报告不会自动刷新。
 
 可选测试及单条预测：
 
